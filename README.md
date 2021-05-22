@@ -87,5 +87,7 @@ git clone https://github.com/junkei-okinawa/alpine-code-server.git code-server-3
 
 ln -s ~/.local/lib/code-server-3.10.2/out/node/entry.js ~/.local/bin/code-server
 
-code-server --auth none --bind-addr 0.0.0.0:8080
+cp config.yaml ~/.config/code-server/
+
+node ~/.local/bin/code-server
 ```
