@@ -76,6 +76,16 @@ Interested in [working at Coder](https://coder.com)? Check out [our open positio
 
 Visit [our website](https://coder.com) for more information about remote development for your organization or enterprise.
 
+## Instlation
+
+```sh
+mkdir -p ~/.local/bin ~/.local/lib
+
 cd ~/.local/lib
+
 git clone https://github.com/junkei-okinawa/alpine-code-server.git code-server-3.10.2
+
 ln -s ~/.local/lib/code-server-3.10.2/out/node/entry.js ~/.local/bin/code-server
+
+code-server --auth none --bind-addr 0.0.0.0:8080
+```
